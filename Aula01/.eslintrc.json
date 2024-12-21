@@ -1,0 +1,31 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "project": "./tsconfig.json" 
+    },
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended" 
+    ],
+    "env": {
+      "browser": true,
+      "node": true,
+      "es2020": true
+    },
+    "rules": {
+      "react/react-in-jsx-scope": "off",
+      "no-unused-vars": "off",  // Disable ESLint's built-in rule for unused variables, handled by @typescript-eslint
+      "@typescript-eslint/no-unused-vars": ["error"],  // Turn on the TypeScript version of the rule
+      "no-explicit-any": "warn",  // Warn when 'any' is used
+      "@typescript-eslint/explicit-module-boundary-types": "off", // Optional: Disable for more flexible typing in module exports
+      "@typescript-eslint/ban-ts-comment": "warn", // Warn about using ts-ignore comments
+      "@typescript-eslint/no-non-null-assertion": "off", // Optional: Allow using non-null assertions (e.g., `value!`)
+      "@typescript-eslint/explicit-function-return-type": "off" // Optional: Disable requiring explicit return types for functions
+    }
+  }
