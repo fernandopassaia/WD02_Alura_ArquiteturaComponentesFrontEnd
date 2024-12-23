@@ -1,12 +1,7 @@
-import { typography } from './defaults/typography'; 
-import { colors } from './defaults/colors'; 
-
 const theme = {
-  typography,
-  colors,
+  typography: {
+    fontFamily: '"Open Sans", sans-serif',
+  }
 };
-
-export type Theme = typeof theme;
-export type ThemeTypographyVariants = keyof typeof typography.variants;
 
 export default theme;
