@@ -19,7 +19,7 @@ export default function HomeScreen() {
       <Menu />
       <Feed>
         <Feed.Header />
-        <Text tag="" variant="">
+        <Text tag="h2" variant="heading1">
           Últimas Atualizações
         </Text>
         <Feed.Posts />
