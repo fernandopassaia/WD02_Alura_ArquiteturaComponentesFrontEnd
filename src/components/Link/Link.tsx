@@ -63,6 +63,7 @@ const Link = React.forwardRef(({
     ...props
   }
 
+  // se for um link externo irá abrir numa nova aba (full refresh)
   if(isIExternalLink) return (
     <Text 
       {...{
@@ -72,6 +73,7 @@ const Link = React.forwardRef(({
     />
   )
 
+  // se for link interno usará o "NextLink" que abre sem refresh (rápido)
   return (
     <NextLink href={href} passHref>
       <Text {...linkProps} />
