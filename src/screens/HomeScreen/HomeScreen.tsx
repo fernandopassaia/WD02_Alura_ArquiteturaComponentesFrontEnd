@@ -1,6 +1,4 @@
 import Box from "@src/components/Box/Box";
-import Link from "@src/components/Link/Link";
-import Text from "@src/components/Text/Text";
 import { useTheme } from "@src/theme/ThemeProvider";
 import Background from "./patterns/Background/Background";
 import Feed from "./patterns/Feed/Feed";
